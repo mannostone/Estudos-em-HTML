@@ -5,5 +5,4 @@ Playlist utilizada https://www.youtube.com/playlist?list=PLwXQLZ3FdTVGKl3iPEyEWp
 
 Aulas 1-14
 
- - inserir video
- comando track com bug
+ - "inserir video" -> comando track com bug
