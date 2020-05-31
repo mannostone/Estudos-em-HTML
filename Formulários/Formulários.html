@@ -29,6 +29,11 @@
         <input type = "checkbox" name = "cores" value = "verde" > Verde <br>
         <input type = "checkbox" name = "cores" value = "azul" > Azul <br>
         <input type = "checkbox" name = "cores" value = "vermelho" > Vermelho <br>
+
+        Quantidade: <br>
+        <input type = "number" name = "Quantidade" min = "0" max = "500"> <br>
+        <input type = "range" name = "Quantidade">
+
         
          <input type = "submit" name = "btn-enviar" value = "enviar"> <!-- grafia para envio dos dados digitados para o arquivo informado na linha 9 -->
         </fieldset>
@@ -49,5 +54,9 @@
     <!-- Nota extra: Para que um campo das tabelas mencionadas nas linhas 22 e 28 venham preenchidas, é necessário
          usar o comando "checked" antes de fechar a tag input. 
          Exemplo utilizando a linha 31: <input type = "checkbox" name = "cores" value = "vermelho" checked> Vermelho <br> -->
+
+    <!-- linha 33 min & max delimitam a quantidade
+         após min e max a função "step = "10"" pode ser utilizada para só validar valores de 10 em 10 
+         "type = "range"" - achei muito vago...-->
 </body>
 </html>
