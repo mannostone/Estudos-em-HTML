@@ -11,16 +11,43 @@
         <fieldset>
         <legend> <strong> Informações pessoais </strong> </legend>
         Nome: <br> <!-- br é a quebra de linha -->
-         <input type = "text" name = "nome" required> <br> <!-- grafia para o login em uma página web" -->
-        Senha: <br>
+         <input type = "text" name = "nome" required maxlength = "8"> <br> <!-- grafia para o login em uma página web" -->
+        
+         Senha: <br>
          <input type = "password" name = "senha" required> <br> <!-- type password esconde o texto digitado -->
-        <input type = "submit" name = "btn-enviar" value = "enviar"> <!-- grafia para envio dos dados digitados para o arquivo informado na linha 9 -->
+        
+         Email: <br>
+        <input type = "email" name = "Email" required> <br> <!-- type email não permite que o email seja um dado qualquer, tornando obrigatório o uso do formato de um email -->
+        
+        Fome de: <br>
+        <input type = "radio" name = "time" value = "Kibe" > Kibezin <br>
+        <input type = "radio" name = "time" value = "4 risoles" > Risolin <br>
+        <input type = "radio" name = "time" value = "Lasanha" > lanhasin <br>
+        <input type = "radio" name = "time" value = "Pizza" > Pizzin <br>
+
+        Cores: <br>
+        <input type = "checkbox" name = "cores" value = "verde" > Verde <br>
+        <input type = "checkbox" name = "cores" value = "azul" > Azul <br>
+        <input type = "checkbox" name = "cores" value = "vermelho" > Vermelho <br>
+        
+         <input type = "submit" name = "btn-enviar" value = "enviar"> <!-- grafia para envio dos dados digitados para o arquivo informado na linha 9 -->
         </fieldset>
     </form>
 
     <!-- linha 14 - "required" usado para dizer que o preenchimento deste campo é obrigatório
-        no lugar do "required" podem ser utilizados "autofocus" e "disabled" onde:
+        no lugar do "required" podem ser utilizados "autofocus", "disabled" e "maxlength" onde:
         autofocus - ao abrir a página ele automaticamente irá destacar o campo para a entrada de dados
-        disabled - desabilita o campo para a entrada de dados, ou seja, não é possível seleciona-lo -->
+        disabled - desabilita o campo para a entrada de dados, ou seja, não é possível seleciona-lo 
+        maxlength - define um número máximo de caracteres permitidos no campo -->
+
+    <!-- linha 22 - Foi criado uma mini tabela de escolha onde só é possível selecionar uma opção.
+         Para montar essa tabela onde só é possivel selecionar uma opção é utilizado a função "type = "radio""-->
+
+    <!-- linha 28 - Foi criado outra mini tabela de escolhe onde é possível selecionar uma ou várias opções.
+         Para montar essa tabela onde é possível selecionar várias opções é utilizado a função "type = "checkbox"" -->
+
+    <!-- Nota extra: Para que um campo das tabelas mencionadas nas linhas 22 e 28 venham preenchidas, é necessário
+         usar o comando "checked" antes de fechar a tag input. 
+         Exemplo utilizando a linha 31: <input type = "checkbox" name = "cores" value = "vermelho" checked> Vermelho <br> -->
 </body>
 </html>
