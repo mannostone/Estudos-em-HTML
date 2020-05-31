@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <title> Tabelas </title>
+
+        <!-- Border é responsável por aplicar a borda em uma tabela ou bloco selecionado
+            Padding é responsável por criar um espaçamento interno em uma tabela por exemplo -->
+        <style>
+            table,th, td { border: 1px solid; } 
+            th, td { padding: 7px; }
+        </style>
+    </head>
+    <body>
+        <table>
+        <caption> <strong> Cadastro de clientes </strong> </caption>
+
+        <tr> <!-- Representa uma linha -->
+            <th> Nome </th><!-- representa um dado em negrito usado somente na primeira linha -->
+            <th> Email </th>
+            <th> Telefone </th>
+            <th> Cargo </th>
+        </tr>
+
+        <tr>
+            <td> Manno </td> <!-- representa um dado em uma célula usado na tabela exceto na primeira linha que é representada pelo "th" -->
+            <td> m4nn0s4k3@gmail.com </td> <!-- Email não Profissa -->
+            <td> 999999999 </td>
+            <td rowspan = "2"> BackEnd </td> <!-- rowspan é reponsável por definir quantas linhas uma célula irá ocupar -->
+        </tr>
+
+        <tr>
+            <td> Stone </td> 
+            <td> pedra@gmail.com </td> 
+            <td> 987654321 </td>
+        </tr>
+
+        <tr>
+            <td colspan = "4"> Total 2 </td> <!-- colspan é reponsável por definir quantas colunas uma célula irá ocupar -->
+        </tr>
+        
+        </table>
+    </body>
+</html>
