@@ -11,12 +11,16 @@
         <fieldset>
         <legend> <strong> Informações pessoais </strong> </legend>
         Nome: <br> <!-- br é a quebra de linha -->
-         <input type = "text" name = "nome"> <br> <!-- grafia para o login em uma página web -->
+         <input type = "text" name = "nome" required> <br> <!-- grafia para o login em uma página web" -->
         Senha: <br>
-         <input type = "password" name = "senha"> <br> <!-- type password esconde o texto digitado -->
+         <input type = "password" name = "senha" required> <br> <!-- type password esconde o texto digitado -->
         <input type = "submit" name = "btn-enviar" value = "enviar"> <!-- grafia para envio dos dados digitados para o arquivo informado na linha 9 -->
         </fieldset>
     </form>
 
+    <!-- linha 14 - "required" usado para dizer que o preenchimento deste campo é obrigatório
+        no lugar do "required" podem ser utilizados "autofocus" e "disabled" onde:
+        autofocus - ao abrir a página ele automaticamente irá destacar o campo para a entrada de dados
+        disabled - desabilita o campo para a entrada de dados, ou seja, não é possível seleciona-lo -->
 </body>
 </html>
