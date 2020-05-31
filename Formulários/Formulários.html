@@ -5,8 +5,17 @@
     <title> Formulários </title>
 </head>
 <body>
+    <!-- form é a tag responsável pelo formulário -->
+    <form action = "cadastro.php" method = "POST">
 
-    <form>
+        <fieldset>
+        <legend> <strong> Informações pessoais </strong> </legend>
+        Nome: <br> <!-- br é a quebra de linha -->
+         <input type = "text" name = "nome"> <br> <!-- grafia para o login em uma página web -->
+        Senha: <br>
+         <input type = "password" name = "senha"> <br> <!-- type password esconde o texto digitado -->
+        <input type = "submit" name = "btn-enviar" value = "enviar"> <!-- grafia para envio dos dados digitados para o arquivo informado na linha 9 -->
+        </fieldset>
     </form>
 
 </body>
